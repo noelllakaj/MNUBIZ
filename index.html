@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay" id="overlay"></div>
+
+<div id="loading-screen">
+    <img src="icon.png" width="120">
+</div>
+
+<div class="hamburger" id="hamburger">☰</div>
+
+<div class="sidebar" id="sidebar">
+    <div class="language-selector">
+        <button class="lang-btn" data-lang="en">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" width="32" height="24">
+        </button>
+        <button class="lang-btn" data-lang="al">
+            <img src="https://flagcdn.com/w40/al.png" alt="Shqip" width="32" height="24">
+        </button>
+        <button class="lang-btn" data-lang="it">
+            <img src="https://flagcdn.com/w40/it.png" alt="Italiano" width="32" height="24">
+        </button>
+	
+    </div>
+
+    <div id="categories" class="categories"></div>
+
+    <div class="powered-by">
+        <a href="#"><strong>📸 Powered by ATLAS</strong></a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="header">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1000">
+        <h1>My Restaurant</h1>
+    </div>
+
+    <input class="search" id="search" placeholder="Search food...">
+
+    <h2 class="category-title" id="category-title">All</h2>
+
+    <div id="menu" class="grid"></div>
+</div>
+
+<!-- MODAL -->
+<div id="item-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modal-img" alt="Food item">
+        <h2 id="modal-title"></h2>
+        <p id="modal-price"></p>
+        <p id="modal-desc"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
